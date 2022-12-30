@@ -83,11 +83,12 @@ h3.teams {
 	font-family: "digital-7", sans-serif;
 	font-weight: bolder;
 	font-size: 18px;
+	text-align: center;
 
 	color: #9aabd8;
 	border: 2px solid #9aabd8;
-	width: 100px;
-	height: 30px;
+	width: 120px;
+	height: 40px;
 }
 
 .add-btn {
