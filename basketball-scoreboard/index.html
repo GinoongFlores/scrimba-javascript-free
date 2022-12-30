@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/alarm-clock" rel="stylesheet">
+
+    <title>Scoreboard</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <h3 class="teams">HOME</h3>
+            <div class="bd">
+                <p id="home-score" class="score">0</p>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="teams">GUEST</h3>
+            <div class="bd">
+                <p id="guest-score" class="score">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-btn">
+        <div class="home-container-btn">
+
+            <button class="add-btn" onclick="add1ForHome()">
+                +1
+            </button>
+
+            <button class="add-btn" onclick="add2ForHome()">
+                +2
+            </button>
+
+            <button class="add-btn" onclick="add3ForHome()">
+                +3
+            </button>
+        </div>
+
+        <div class="guest-container-btn">
+
+            <button class="add-btn" onclick="add1ForGuest()">
+                +1
+            </button>
+
+            <button class="add-btn" onclick="add2ForGuest()">
+                +2
+            </button>
+
+            <button class="add-btn" onclick="add3ForGuest()">
+                +3
+            </button>
+
+        </div>
+    </div>
+
+    <div class="decrease-btn-container">
+
+        <button class="decrease-btn" onclick="decreaseForHome()">
+            DECREASE
+        </button>
+
+        <button class="decrease-btn" onclick="decreaseForGuest()">
+            DECREASE
+        </button>
+
+    </div>
+
+    <div class="center-reset">
+        <button id="btn-reset" onclick="reset()">
+            RESET
+        </button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
