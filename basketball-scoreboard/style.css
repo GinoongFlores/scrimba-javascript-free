@@ -110,3 +110,16 @@ h3.teams {
 	color: #fff;
 	cursor: pointer;
 }
+
+@media (max-width: 480px) {
+	.add-btn {
+		font-size: 1rem;
+
+		max-width: 2.188rem;
+		max-height: 2.188rem;
+	}
+
+	.decrease-btn-container {
+		margin-top: 1.563rem;
+	}
+}
