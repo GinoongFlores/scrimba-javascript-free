@@ -17,6 +17,7 @@ body {
 	background: #1c1c1c;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 h1 {
@@ -28,12 +29,15 @@ h1 {
 }
 
 .container {
+	border-radius: 6px;
 	background-color: #1f2937;
 	width: 550px;
 	height: 550px;
 }
 
 .container .wrapper-text {
+	display: flex;
+	flex-direction: column;
 	padding: 115px 144px 0 52px;
 }
 
@@ -46,13 +50,21 @@ h1 {
 }
 
 .motto {
-	margin-top: 10px;
 	color: #d5d4d8;
+	margin: 0;
+	margin-top: -10px;
 }
 
-.gen-pass0,
-.gen-pass1 {
+.flex-password .border {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	color: #4adf86;
+	background: #273549;
+	border-radius: 6px;
+	width: 211px;
+	height: 39px;
 }
 
 #generate-password {
@@ -63,10 +75,11 @@ h1 {
 	border: none;
 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 	border-radius: 6px;
+	font-size: 16px;
 }
 
 .wrapper-btn {
-	padding: 51px 337px 0 52px;
+	margin-top: 51px;
 }
 
 #generate-password:hover {
@@ -83,6 +96,7 @@ h1 {
 /* Flex */
 
 .flex-password {
+	margin-top: 35px;
 	display: flex;
 	justify-content: space-evenly;
 }
