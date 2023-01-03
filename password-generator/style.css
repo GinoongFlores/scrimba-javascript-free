@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+	font-family: "Karla", sans-serif;
+	background: #1c1c1c;
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 40px;
+	/* line-height: 40px; */
+	letter-spacing: -0.025em;
+}
+
+.container {
+	background-color: #1f2937;
+	width: 550px;
+	height: 550px;
+}
+
+.container .wrapper-text {
+	padding: 115px 144px 0 52px;
+}
+
+.white {
+	color: white;
+}
+
+.shade-green {
+	color: #4adf86;
+}
+
+.motto {
+	margin-top: 10px;
+	color: #d5d4d8;
+}
+
+.gen-pass0,
+.gen-pass1 {
+	color: #4adf86;
+}
+
+#generate-password {
+	width: 191px;
+	height: 42px;
+
+	background: #10b981;
+	border: none;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+}
+
+.wrapper-btn {
+	padding: 51px 337px 0 52px;
+}
+
+#generate-password:hover {
+	background: #0ea674;
+	cursor: pointer;
+}
+
+#hr-width {
+	width: 446px;
+	border: 1px solid #2f3e53;
+	margin-top: 35px;
+}
+
+/* Flex */
+
+.flex-password {
+	display: flex;
+	justify-content: space-evenly;
+}
