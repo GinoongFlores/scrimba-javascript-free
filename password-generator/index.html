@@ -22,19 +22,27 @@
 
             <p class="motto">Never use an insecure password again.</p>
 
+            <div class="wrapper-password-length">
+                <p class="white">
+                    <label for="setPasswordLength">Set your password length from 8 - 15:</label>
+                </p>
+                <input type="text" onchange="getPasswordLength()" name="length" id="password-length">
+            </div>
+
             <div class="wrapper-btn">
                 <button id="generate-password" class="white">Generate passwords</button>
             </div>
+
         </div>
 
         <hr id="hr-width">
 
         <div class="flex-password">
             <div class="border">
-                <p class="gen-pass0">Generate password0</p>
+                <p class="gen-pass0"></p>
             </div>
             <div class="border">
-                <p class="gen-pass1">Generate password1</p>
+                <p class="gen-pass1"></p>
             </div>
         </div>
 

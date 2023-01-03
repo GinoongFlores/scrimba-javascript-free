@@ -38,7 +38,18 @@ h1 {
 .container .wrapper-text {
 	display: flex;
 	flex-direction: column;
-	padding: 115px 144px 0 52px;
+	padding: 50px 144px 0 52px;
+}
+
+.wrapper-password-length {
+	display: flex;
+	align-items: center;
+}
+
+input#password-length {
+	width: 50px;
+	height: 20px;
+	margin-left: 6px;
 }
 
 .white {
