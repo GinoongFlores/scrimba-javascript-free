@@ -40,35 +40,16 @@ randomPasswords.addEventListener("click", function () {
     generatePass0.textContent = ''
     generatePass1.textContent = ''
 
+    for (let i = 0; i <= passwordLength; i++) {
 
-    function getPasswordLength() {
-        let userSetPasswordLength = document.getElementById("password-length").value
+        // * Inside this loop we generate the two random passwords with the characters length of 92
+        let randomPass0 = Math.floor(Math.random() * characters.length)
+        let randomPass1 = Math.floor(Math.random() * characters.length)
 
-        let parseUserSetLength = parseInt(userSetPasswordLength)
-        console.log(parseUserSetLength)
-
-        if (parseUserSetLength < 8 || parseUserSetLength > 16) {
-            alert("Password length must be at least 8 characters")
-            // console.log(userSetPasswordLength)
-        } else {
-            // * We only need 15 characters as the password length, so we loop it until 15 times.
-            for (let i = 0; i <= parseUserSetLength; i++) {
-
-                // * Inside this loop we generate the two random passwords with the characters length of 92
-                let randomPass0 = Math.floor(Math.random() * characters.length)
-                let randomPass1 = Math.floor(Math.random() * characters.length)
-
-                // * Display the two random passwords in the <p> elements with the += operator. Here we already set the <p> elements on the top as empty strings so that every time the button is clicked, the previous random passwords will be replaced with the new ones
-                generatePass0.textContent += characters[randomPass0]
-                generatePass1.textContent += characters[randomPass1]
-            }
-
-        }
+        // * Display the two random passwords in the <p> elements with the += operator. Here we already set the <p> elements on the top as empty strings so that every time the button is clicked, the previous random passwords will be replaced with the new ones
+        generatePass0.textContent += characters[randomPass0]
+        generatePass1.textContent += characters[randomPass1]
     }
-
-    getPasswordLength()
-
-
 })
 
 
