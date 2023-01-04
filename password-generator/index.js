@@ -6,8 +6,7 @@
 ? Stretch Goals // Optional 
 
 * 1. Ability to set password length - this use an input field 
- - 
-
+ 
 * 2. Add "copy-on-click"
 
 * 3. Toggle "symbols" and "numbers" on/off
@@ -49,6 +48,22 @@ randomPasswords.addEventListener("click", function () {
     }
 })
 
+
+copyPassword0.addEventListener("click", function () {
+    navigator.clipboard.writeText(generatePass0.textContent)
+
+    // * Alert the user that the password has been copied
+    alert("Password copied to clipboard")
+
+})
+
+copyPassword1.addEventListener("click", function () {
+    navigator.clipboard.writeText(generatePass1.textContent)
+
+    // * Alert the user that the password has been copied
+    alert("Password copied to clipboard")
+
+})
 
 
 
