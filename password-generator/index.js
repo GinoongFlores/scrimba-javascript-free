@@ -23,11 +23,8 @@ let generatePass0 = document.querySelector(".gen-pass0")
 let generatePass1 = document.querySelector(".gen-pass1")
 let randomPasswords = document.querySelector("#generate-password")
 
-// let userSetPasswordLength = document.getElementById("password-length").ariaValueNow
-
-// let parseUserSetLength = parseInt(userSetPasswordLength)
-
-// console.log(userSetPasswordLength)
+let copyPassword0 = document.querySelector("#copy-password0")
+let copyPassword1 = document.querySelector("#copy-password1")
 
 
 // * Initialize the password length to be used in the for loop 
@@ -40,7 +37,7 @@ randomPasswords.addEventListener("click", function () {
     generatePass0.textContent = ''
     generatePass1.textContent = ''
 
-    for (let i = 0; i <= passwordLength; i++) {
+    for (let i = 0; i < passwordLength; i++) {
 
         // * Inside this loop we generate the two random passwords with the characters length of 92
         let randomPass0 = Math.floor(Math.random() * characters.length)
