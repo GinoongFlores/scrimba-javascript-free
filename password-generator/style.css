@@ -105,16 +105,62 @@ input#password-length {
 	margin-top: 35px;
 }
 
-/* Flex */
+/* Media queries */
 
-.wrapper-passwords {
-	margin-top: 35px;
-	display: flex;
-	justify-content: space-evenly;
-}
+@media screen and (max-width: 576px) {
+	.container {
+		height: 100%;
+	}
 
-.wrapper-copy-btn {
-	margin-top: 20px;
-	display: flex;
-	justify-content: space-evenly;
+	.container-card {
+		width: 100%;
+		height: 100%;
+		padding: 50px 0 50px 0;
+	}
+
+	.wrapper-text {
+		text-align: center;
+		padding: 0 20px 0 20px;
+	}
+
+	.wrapper-text h1 {
+		font-size: 30px;
+	}
+
+	.wrapper-btn {
+		margin-top: 51px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#hr-width {
+		width: 100%;
+	}
+
+	.wrapper-passwords {
+		margin-top: 35px;
+
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.wrapper-passwords p {
+		font-size: 0.9rem;
+	}
+
+	.wrapper-copy-btn {
+		margin-top: 20px;
+
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
+
+	.btn-green {
+		width: 10rem;
+		font-size: 0.9rem;
+	}
 }
