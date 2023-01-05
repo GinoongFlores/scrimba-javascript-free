@@ -27,6 +27,13 @@ h1 {
 }
 
 .container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-card {
 	border-radius: 6px;
 	background-color: #1f2937;
 	width: 550px;
