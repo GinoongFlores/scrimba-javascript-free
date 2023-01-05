@@ -20,44 +20,47 @@
 <body>
 
     <div class="container">
+        <div class="container-card">
 
-        <div class="wrapper-text">
-            <h1>
-                <span class="white">Generate a</span>
-                <br>
-                <span class="shade-green">random password</span>
-            </h1>
+            <div class="wrapper-text">
+                <h1>
+                    <span class="white">Generate a</span>
+                    <br>
+                    <span class="shade-green">random password</span>
+                </h1>
 
-            <p class="motto">Never use an insecure password again.</p>
+                <p class="motto">Never use an insecure password again.</p>
 
 
-            <div class="wrapper-btn">
-                <button id="generate-password" class="white btn-green">Generate passwords</button>
+                <div class="wrapper-btn">
+                    <button id="generate-password" class="white btn-green">Generate passwords</button>
+                </div>
+
+                <hr id="hr-width">
+
+            </div>
+
+
+            <div class="wrapper-passwords">
+                <div class="border">
+                    <p class="gen-pass0"></p>
+                </div>
+                <div class="border">
+                    <p class="gen-pass1"></p>
+                </div>
+            </div>
+
+            <div class="wrapper-copy-btn">
+                <button id="copy-password0" class="white btn-green">
+                    Copy 1st Password
+                </button>
+
+                <button id="copy-password1" class="white btn-green">
+                    Copy 2nd Password
+                </button>
             </div>
 
         </div>
-
-        <hr id="hr-width">
-
-        <div class="wrapper-passwords">
-            <div class="border">
-                <p class="gen-pass0"></p>
-            </div>
-            <div class="border">
-                <p class="gen-pass1"></p>
-            </div>
-        </div>
-
-        <div class="wrapper-copy-btn">
-            <button id="copy-password0" class="white btn-green">
-                Copy 1st Password
-            </button>
-
-            <button id="copy-password1" class="white btn-green">
-                Copy 2nd Password
-            </button>
-        </div>
-
     </div>
 
     <script src="index.js"></script>
