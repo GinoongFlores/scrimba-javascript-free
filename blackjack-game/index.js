@@ -40,7 +40,11 @@ function startGame() {
     arrCards = [firstCard, secondCard]
     sum = firstCard + secondCard
 
-    renderGame()
+    // This prevents the player from starting the game again if he/she has already got Blackjack
+    if (isAlive === true && hasBlackJack === false) {
+        renderGame()
+    }
+
 }
 
 function renderGame() {
