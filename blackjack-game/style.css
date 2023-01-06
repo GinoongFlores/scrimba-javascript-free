@@ -11,6 +11,7 @@ body {
 }
 
 h1 {
+	font-size: 1.5rem;
 	color: goldenrod;
 }
 
@@ -26,21 +27,39 @@ background - goldenrod
  */
 
 #start-btn,
-#newCard-btn {
-	background: goldenrod;
+#newCard-btn,
+#newGame-btn {
 	width: 150px;
-	/* height: 30px; */
 	padding: 5px;
+
+	font-size: 0.7rem;
+	background: goldenrod;
+	color: #016f32;
+
+	/* height: 30px; */
 	font-weight: bold;
+	border: none;
+	border-radius: 3px;
 
 	/* Here instead of 4px on margin bottom and top. We make each 2px of them to have a even look  */
 	margin-bottom: 2px;
 	margin-top: 2px;
-	color: #016f32;
-	border: none;
 }
 
 #start-btn:hover,
-#newCard-btn:hover {
+#newCard-btn:hover,
+#newGame-btn:hover {
 	cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+	#start-btn,
+	#newCard-btn,
+	#newGame-btn {
+		font-size: 0.9rem;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
 }
