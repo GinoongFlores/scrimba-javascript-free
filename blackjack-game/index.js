@@ -76,12 +76,24 @@ function newCard() {
         // add the card to the sum
         sum += card
         arrCards.push(card)
+
         renderGame()
 
     }
 
-    // renderGame()
 
+}
+
+function reset() {
+    // reset the game
+
+    isAlive = false
+    hasBlackJack = false
+
+    sum = 0
+    arrCards = []
+    message = ""
+    renderGame()
 
 }
 
