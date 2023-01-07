@@ -25,10 +25,16 @@ function renderLeads() {
 
     for (let i = 0; i < myLeads.length; i++) {
 
-        listItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>"
-        console.log(listItems)
+        // Older method
+        // listItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>"
+        // console.log(listItems)
 
-
+        // Newer method using template strings/literals and it's easier to read and write like an HTML structure
+        listItems += `<li> 
+                        <a target='_blank' href='${myLeads[i]}'>
+                        ${myLeads[i]}
+                        </a>
+                    </li>`
 
     }
 
