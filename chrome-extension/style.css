@@ -22,12 +22,17 @@ input {
 
 button {
 	border: none;
-	background: #5f9341;
+	background: #363638;
 	color: white;
 	font-weight: bold;
 	border-radius: 3px;
 
 	padding: 10px 20px;
+}
+
+button:hover {
+	cursor: pointer;
+	background: #242426;
 }
 
 ul {
@@ -40,5 +45,5 @@ ul li {
 }
 
 li a {
-	color: #5f9341;
+	color: #023e8a;
 }
