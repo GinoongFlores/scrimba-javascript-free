@@ -9,6 +9,7 @@ const inputEl = document.querySelector('#input-el')
 const ulEl = document.querySelector('#ul-el')
 
 
+
 inputBtn.addEventListener("click", function () {
     myLeads.push(inputEl.value)
 
