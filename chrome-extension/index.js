@@ -44,4 +44,11 @@ function renderLeads() {
 
 }
 
+deleteBtn.addEventListener("dblclick", function () {
+    localStorage.clear()
+    myLeads = []
+    renderLeads() // just call the renderLeads() as it will render an empty list
+
+})
+
 
