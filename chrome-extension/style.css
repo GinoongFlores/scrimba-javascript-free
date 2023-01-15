@@ -26,8 +26,14 @@ button {
 	color: white;
 	font-weight: bold;
 	border-radius: 3px;
+	border: 1px solid #363638;
 
 	padding: 10px 20px;
+}
+
+#delete-btn {
+	background: white;
+	color: #c0392b;
 }
 
 button:hover {
