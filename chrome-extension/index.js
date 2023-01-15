@@ -7,6 +7,8 @@ let myLeads = []
 const inputBtn = document.querySelector('#input-btn')
 const inputEl = document.querySelector('#input-el')
 const ulEl = document.querySelector('#ul-el')
+const deleteBtn = document.querySelector('#delete-btn')
+const tabBtn = document.querySelector('#tab-btn')
 
 
 
