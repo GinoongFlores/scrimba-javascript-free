@@ -4,40 +4,48 @@
 // Methodology: If possible, use const. If not, use let. 
 
 let myLeads = []
+
 const inputBtn = document.querySelector('#input-btn')
 const inputEl = document.querySelector('#input-el')
 const ulEl = document.querySelector('#ul-el')
 const deleteBtn = document.querySelector('#delete-btn')
 const tabBtn = document.querySelector('#tab-btn')
 
+// Get the leads from the localStorage with JSON.parse()
+// the values for this array could be the ["lead1", "lead2"] or null
+const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+
+// 1. Check if leadsFromLocalStorage is truthy
+// console.log(leadsFromLocalStorage)
+// 2. If so, set myLeads to its value(leadsFromLocalStorage) and call renderLeads()
+
+// Checking localStorage before rendering - if there are leads (truthy) in localStorage, render them. If null, don't render anything 
+if (leadsFromLocalStorage) { // this returns to true if the localStorage has has a value, if null it returns false and ignore the code block  
+    myLeads = leadsFromLocalStorage
+    render(myLeads)
+
+}
 
 
-inputBtn.addEventListener("click", function () {
-    myLeads.push(inputEl.value)
-
-    // clear the input value after every input submission
-    inputEl.value = ""
-    renderLeads()
-
-})
-
-function renderLeads() {
+function render(leads) {
 
     // the listItems variable will hold all the HTML list items elements
     let listItems = ""
 
-    for (let i = 0; i < myLeads.length; i++) {
+    for (let i = 0; i < leads.length; i++) {
 
         // Older method
         // listItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>"
         // console.log(listItems)
 
         // Newer method using template strings/literals and it's easier to read and write like an HTML structure
-        listItems += `<li> 
-                        <a target='_blank' href='${myLeads[i]}'>
-                        ${myLeads[i]}
+        listItems += `
+                    <li> 
+                        <a target='_blank' href='${leads[i]}'>
+                        ${leads[i]}
                         </a>
-                    </li>`
+                    </li>
+                    `
 
     }
 
