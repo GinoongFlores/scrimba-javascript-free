@@ -13,7 +13,7 @@ const tabBtn = document.querySelector('#tab-btn')
 
 // Get the leads from the localStorage with JSON.parse()
 // the values for this array could be the ["lead1", "lead2"] or null
-const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads")) // turn JSON array into Javascript array by using JSON.parse()
 
 // 1. Check if leadsFromLocalStorage is truthy
 // console.log(leadsFromLocalStorage)
@@ -59,8 +59,9 @@ inputBtn.addEventListener("click", function () {
 
     // clear the input value after every input submission
     inputEl.value = ""
-    localStorage.setItem("myLeads", JSON.stringify(myLeads))
-    render(myLeads)
+    localStorage.setItem("myLeads", JSON.stringify(myLeads)) //turns the array into a JSON array and stores it in the localStorage
+
+    render(myLeads) // pass myLeads variable as an argument as part of the render function with the parameter of leads
 
 })
 
