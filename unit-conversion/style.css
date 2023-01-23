@@ -116,3 +116,76 @@ p.conversion {
 	justify-content: center;
 	align-items: center;
 }
+
+@media screen and (max-width: 576px) {
+	.container {
+		height: 100vh;
+		overflow: hidden;
+		margin: 3rem;
+	}
+
+	.card {
+		width: 100%;
+		height: 100%;
+	}
+
+	.card-body {
+		width: 100%;
+		height: 100%;
+		/* gap: 1rem; */
+		padding: 1.5rem;
+	}
+
+	.length,
+	.volume,
+	.mass {
+		width: 100%;
+		height: 100%;
+	}
+
+	#conversion-title {
+		font-size: 1.5rem;
+	}
+
+	h3.unit-text {
+		font-size: 1rem;
+	}
+
+	p.conversion {
+		font-size: 1rem;
+	}
+
+	input#unit-number {
+		font-size: 3.25rem;
+		width: 150px !important;
+	}
+
+	button#btn-convert {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 476px) {
+	#conversion-title {
+		font-size: 1rem;
+		margin-top: 1rem;
+	}
+
+	input#unit-number {
+		font-size: 2.25rem;
+		padding: 1rem;
+	}
+
+	button#btn-convert {
+		margin: 1rem;
+		font-size: 0.95rem;
+	}
+
+	h3.unit-text {
+		font-size: 1rem;
+	}
+
+	p.conversion {
+		font-size: 0.75rem;
+	}
+}
