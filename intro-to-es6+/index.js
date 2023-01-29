@@ -272,7 +272,7 @@ let example = 'Christian '
 // padStart() and padEnd() - adds a single string to the beginning or end of the string based on the specified length
 console.log(example.padEnd(14, 'Paul'))
 
-
+// trailing commas - we don't get an error even if we add a comma at the end of the parameter or an object
 function add(param1,) {
     const obj = {
         status: "approve",
