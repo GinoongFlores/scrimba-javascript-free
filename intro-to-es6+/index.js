@@ -289,12 +289,24 @@ function add(param1,) {
 add("parameter")
 
 
+console.log(`
+Sets in ES6
 
+`)
 
+// sets - it is a collection of unique values
 
+const exampleSet = new Set([1, 1, 1, 1, 2, 2, 3])
 
+exampleSet.add(4).add(5).add(8)// adds a value on the sets with chaining add method
 
+for (const sample of exampleSet) { // we can also use for of loop to iterate through the sets
+    console.log("sets of sample: " + sample)
+}
 
+console.log("Check 1 value on sets: " + exampleSet.has(1)) // checks if the value 1 is in the set
 
+console.log(exampleSet.delete(1)) // deletes the value 1 in the set including its duplicates
 
-
+console.log(exampleSet) // this set of duplicate values only display their own unique value not their duplicates
+console.log("Set size" + exampleSet.size) // returns the size of the set
