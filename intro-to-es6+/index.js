@@ -262,6 +262,27 @@ constSample.firstName = "Christian"
 console.log(constSample)
 console.log(constSampleObj)
 
+console.log(`
+padStart() & padEnd()
+
+`)
+
+let example = 'Christian '
+
+// padStart() and padEnd() - adds a single string to the beginning or end of the string based on the specified length
+console.log(example.padEnd(14, 'Paul'))
+
+
+function add(param1,) {
+    const obj = {
+        status: "approve",
+    }
+
+    console.log(obj);
+}
+
+
+
 
 
 
