@@ -1,4 +1,4 @@
-## My Scrimba Projects
+## My Scrimba Javascript Projects
 
 1. counter app: https://ginoongflores-counter-app.netlify.app
 2. basketball scoreboard: https://ginoongflores-scrimba-scoreboard.netlify.app
